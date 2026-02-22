@@ -2,7 +2,8 @@
 
 # pr-hamster-app
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that General purpose PR app
+> A GitHub App built with [Probot](https://github.com/probot/probot) helps
+> house-keeping PRs and issues
 
 ## Setup
 
