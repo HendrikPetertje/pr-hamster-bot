@@ -1,3 +1,5 @@
+![pr-hamster-app](docs/hamster-banner.png)
+
 # pr-hamster-app
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that General purpose PR app
