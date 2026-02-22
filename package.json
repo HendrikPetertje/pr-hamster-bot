@@ -1,0 +1,45 @@
+{
+  "name": "pr-hamster-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "General purpose PR app",
+  "author": "Peter van der Meulen",
+  "license": "ISC",
+  "homepage": "https://github.com//",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsc",
+    "start": "probot run ./dist/index.js",
+    "test": "vitest",
+    "lint": "biome check --error-on-warnings",
+    "lint:fix": "biome check --write"
+  },
+  "dependencies": {
+    "openai": "^6.22.0",
+    "probot": "^13.4.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.3",
+    "@octokit/webhooks": "12.3.2",
+    "@octokit/webhooks-types": "7.6.1",
+    "@types/node": "^25.3.0",
+    "nock": "^14.0.5",
+    "smee-client": "^2.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "overrides": {
+    "@types/pg": "8.15.1"
+  },
+  "engines": {
+    "node": ">= 24",
+    "packageManager": "npm@10"
+  },
+  "type": "module"
+}
