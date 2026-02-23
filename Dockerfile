@@ -1,8 +1,12 @@
-FROM node:20-slim
+FROM node:24-slim
 WORKDIR /usr/src/app
-COPY package.json package-lock.json ./
-RUN npm ci --production
-RUN npm cache clean --force
+
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+
+RUN npm install -g pnpm && pnpm install --frozen-lockfile
+
 ENV NODE_ENV="production"
 COPY . .
-CMD [ "npm", "start" ]
+run pnpm build
+
+CMD [ "pnpm", "start" ]

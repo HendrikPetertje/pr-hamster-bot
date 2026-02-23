@@ -40,8 +40,8 @@ should exist to instruct the AI how to do its work.
 
 Command:
 ```
-/squash-merge
-optional note-test here
+/hamster-squash-merge
+optional notes here
 ```
 
 Configuration file:

@@ -10,4 +10,5 @@
 **/dist
 **/*.pem
 **/.aim
+**/docs
 Dockerfile

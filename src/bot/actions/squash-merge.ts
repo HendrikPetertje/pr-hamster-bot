@@ -2,7 +2,7 @@ import type { Probot } from 'probot';
 import { summarizeText } from '../../repositories/aiSummary.js';
 import { getFileContent } from '../../repositories/octokit.js';
 
-const SQUASH_MERGE_TRIGGER = '/squash-merge';
+const SQUASH_MERGE_TRIGGER = '/hamster-squash-merge';
 const squasheMergeTriggerRegex = new RegExp(`^${SQUASH_MERGE_TRIGGER}`, 'i');
 
 export const onSquashMerge = (app: Probot) => {
