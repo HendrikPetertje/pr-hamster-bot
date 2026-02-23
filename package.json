@@ -14,7 +14,7 @@
   "scripts": {
     "tsc": "tsc",
     "build": "tsc",
-    "start": "probot run ./dist/index.js",
+    "start": "probot run ./dist/bot/index.js",
     "test": "vitest",
     "lint": "biome check --error-on-warnings",
     "lint:fix": "biome check --write"
